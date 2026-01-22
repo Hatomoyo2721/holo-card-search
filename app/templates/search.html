@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hololive TCG Card Search</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/static/card-decor/holocard.css" />
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <input
+      id="search"
+      type="text"
+      placeholder="Search name or card code..."
+      autocomplete="off"
+    />
+  </div>
+
+  <div id="card-container" class="card-grid"></div>
+
+  <script type="module" src="/static/module/cardSearch.js"></script>
+
+</body>
+</html>
