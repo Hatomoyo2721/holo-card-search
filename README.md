@@ -6,13 +6,17 @@
 </div>
 
 <br>
+
 A simple personal hobby project for browsing and searching cards from the **_hololive OFFICIAL CARD GAME_**
+
+<br>
 
 This is **_not an official product_**, made purely for personal interest
 
 <br>
 
 <h1>Features</h1>
+
 - Display all available cards in a grid
 - Search cards by: - Oshi's name (e.g. Koseki Bijou)
 - Card code (e.g. hBP04-066) - Lightweight UI for quick browsing
@@ -21,6 +25,7 @@ This is **_not an official product_**, made purely for personal interest
 <br>
 
 <h1>Prerequisites</h1>
+
 - **Python** 3.13+
 - **Backend**: Flask
 - **Database**: SQLite
@@ -32,8 +37,9 @@ This is **_not an official product_**, made purely for personal interest
 > Note: FastAPI and uvicorn are included in requirements.txt for future experiments
 > The current app runs with **Flask only**
 
+<br>
 
-<h2>How to run</h2>
+<h1>How to run</h1>
 
 - Install dependencies
 
