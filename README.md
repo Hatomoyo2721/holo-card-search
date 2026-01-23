@@ -9,8 +9,6 @@
 
 A simple personal hobby project for browsing and searching cards from the **_hololive OFFICIAL CARD GAME_**
 
-<br>
-
 This is **_not an official product_**, made purely for personal interest
 
 <br>
