@@ -18,9 +18,10 @@ function render(cards) {
     div.className = "card";
 
     const img = document.createElement("img");
-    img.src = resolveImage(card.card_number);
+    img.src = resolveImage(card);
+    
     img.onerror = () => {
-      img.src = "static/assets/placeholder.webp";
+      img.src = "/static/assets/placeholder.webp";
     };
 
     const title = document.createElement("div");
