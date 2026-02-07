@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hololive TCG Card Search</title>
-  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
   <link rel="stylesheet" href="/static/card-decor/holocard.css" />
+  <link rel="stylesheet" href="/static/card-decor/theme.css" />
 </head>
 
 <body>
 
   <header class="top-bar">
     <h1>Hololive Card Search</h1>
-    <button id="theme-btn">🌗 Theme</button>
+
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+      <i class="fa-solid fa-sun"></i>
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    
   </header>
 
   <div class="layout">
@@ -26,11 +35,12 @@
     <main class="content">
       <input type="text" id="search" placeholder="Search card name or ID..." autocomplete="off" />
       <div id="card-container">
-        </div>
+      </div>
     </main>
   </div>
 
   <script type="module" src="/static/module/cardSearch.js"></script>
 
 </body>
+
 </html>

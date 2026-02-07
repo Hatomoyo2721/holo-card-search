@@ -17,7 +17,7 @@ function normalize(text) {
 // Debounce function to limit the rate of function calls
 function debounce(func, wait) {
   let timeout;
-  return function(...args) {
+  return function (...args) {
     clearTimeout(timeout);
     timeout = setTimeout(() => func.apply(this, args), wait);
   };
@@ -66,14 +66,15 @@ function filterCards(keyword) {
 // Theme Logic
 function initTheme() {
   const root = document.documentElement;
-  const saved = localStorage.getItem("theme") || "light";
-  root.className = saved;
+  const toggleBtn = document.getElementById("theme-toggle");
 
-  themeBtn.addEventListener("click", () => {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  root.className = savedTheme;
+  toggleBtn.addEventListener("click", () => {
     const isDark = root.classList.contains("dark");
     const newTheme = isDark ? "light" : "dark";
-    
     root.className = newTheme;
+
     localStorage.setItem("theme", newTheme);
   });
 }
